@@ -8,10 +8,10 @@
     <title>Inicio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap">
 </head>
 
 <body>
@@ -20,8 +20,8 @@
         <div class="container-fluid px-0">
             <nav class="navbar navbar-expand-lg border-3 border-bottom border-dark header__nav">
                 <div class="container-fluid">
-                    <img src="img/hoja.png" class="header__logo" alt="img">
-                    <a class="navbar-brand header__titule" href="index.html"><strong>Vivero Ckoshcke</strong></a>
+                    <img src="../img/hoja.png" class="header__logo" alt="img">
+                    <a class="navbar-brand header__titule" href="../index.html"><strong>Vivero Ckoshcke</strong></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -30,13 +30,13 @@
                     <div class="collapse navbar-collapse nav__items" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mx-4">
                             <li class="nav-item mx-1">
-                                <a class="nav-link color__items" aria-current="page" href="index.html">INICIO</a>
+                                <a class="nav-link color__items" aria-current="page" href="../index.html">INICIO</a>
                             </li>
                             <li class="nav-item mx-1">
-                                <a class="nav-link color__items" aria-current="page" href="pag/jardineria.html">JARDINERIA</a>
+                                <a class="nav-link color__items" aria-current="page" href="jardineria.html">JARDINERIA</a>
                             </li>
                             <li class="nav-item dropdown mx-1">
-                                <a class="nav-link color__items dropdown-toggle" href="pag/productos.html" role="button"
+                                <a class="nav-link color__items dropdown-toggle" href="productos.html" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     PRODUCTOS
                                 </a>
@@ -53,7 +53,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item mx-1">
-                                <a class="nav-link color__items" href="pag/contacto.html">CONTACTANOS</a>
+                                <a class="nav-link color__items" href="contacto.html">CONTACTANOS</a>
                             </li>
                         </ul>
                         <form class="d-flex" role="search">
@@ -67,48 +67,39 @@
     </header>
     
     <main>
-        <h1 class="titule"><strong>Bienvenidos a Vivero Ckoshcke</strong></h1>
-        <div class="main__index">
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                <div clas="img__otro">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="5000">
-                          <img src="img/inicio1.jpg" class="d-block w-40" alt="main__img">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="5000">
-                          <img src="img/inicio2.jpg" class="d-block w-40" alt="main__img">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="5000">
-                          <img src="img/inicio3.jpg" class="d-block w-40" alt="main__img">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="5000">
-                          <img src="img/inicio4.jpg" class="d-block w-40" alt="main__img">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="5000">
-                          <img src="img/inicio5.jpg" class="d-block w-40" alt="main__img">
-                        </div>
-                      </div>
-                </div>
-                
-              </div>
-        </div>
-        
-        <p class="parrafo"><strong> Ckoshcke es un Vivero productor familiar, que tiene como objetivo ofrecer variedad y cantidad de recursos para los espacios verdes, con el motivo de generar e inspirar a la comunidad el cuidado del medio ambiente a través de la concientización sobre la importancia de la naturaleza.</strong></p>
-        
+        <h1 class="titule"><strong>Contactanos</strong></h1>
+        <div class="main__contacto">
+            <div class="contacto__formu">
+                <h1 class="fs-4"><strong>¡PODES PREGUNTARNOS LO QUE DESEES!</strong></h1>
+                <form action="" method=""enctype="" class="pb-3">
+                    <fieldset>
+                        <h5 class="full-name pt-4 pb-3 fw-bold">NOMBRE Y APELLIDO</h5>
+                        <input class="fon__contacto" type="text" name="full-name" placeholder="Nombre y apellido">
+                        <h5 class="phone py-3 fw-bold">TELEFONO</h5>
+                        <input class="fon__contacto" type="text" name="phone" placeholder="Telefono">
+                        <h5 class="e-mail py-3 fw-bold">E-MAIL</h5>
+                        <input class="fon__contacto" type="text" name="e-mail" placeholder="E-mail">
+                        <h5 class="comment py-3 fw-bold">CONSULTAR</h5>
+                        <textarea class="fon__contacto" name="comment" id="commentLyrics" cols="45" rows="5" placeholder="Escribí aquí tu consulta"></textarea>
+                    </fieldset>
+                    <button type="submit" class="btn btn-success mx-3 my-2 py-2 fs-6 rounded-4"><strong>Enviar</strong></button>
+                    <button type="reset" class="btn btn-success mx-3 my-2 py-2 fs-6 rounded-4"><strong>Borrar</strong></button>
+                </form> 
+            </div>
+            <div class="contacto__horarios">
+                <h4><strong>NUESTROS HORARIOS DE ATENCIÓN SON</strong></h4>
+                <ul class="letra__atencion">
+                    <li><strong class="co__items">Lunes:</strong> 8:00 a 20:00</li>
+                    <li><strong class="co__items">Martes:</strong> 8:00 a 20:00</li>
+                    <li><strong class="co__items">Miercoles:</strong> 8:00 a 20:00</li>
+                    <li><strong class="co__items">Jueves:</strong> 8:00 a 20:00</li>
+                    <li><strong class="co__items">Viernes:</strong> 8:00 a 20:00</li>
+                    <li><strong class="co__items">Sábado:</strong> 8:00 a 20:00</li>
+                    <li><strong class="co__items">Domingo:</strong> 8:00 a 20:00</li>
+                </ul>
+                <h4 class="my-4"><strong>PODES UBICARNOS EN</strong></h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3529.353718639708!2d-64.2431479!3d-27.7988811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b4dff92c500c1%3A0xfd0b0a47b63b0ff!2sGral.%20Paz%2C%20Santiago%20del%20Estero!5e0!3m2!1ses-419!2sar!4v1675984258948!5m2!1ses-419!2sar" class="m-0 p-0" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-        
-        <div class="main__card">
-            <div class="cards">
-                <img src="img/semilla.png" class="w-100 color1__card card__img" alt="img">
-                <h3>Semillas</h3>
-            </div>
-            <div class="cards">
-                <img src="img/maceta.jpg" class="w-85 card__img" alt="img">
-                <h3>Macetas</h3>
-            </div>
-            <div class="cards">
-                <img src="img/maceta.png" class="w-100 color2__card card__img" alt="img">
-                <h3>Plantas</h3>
             </div>
         </div>
         
